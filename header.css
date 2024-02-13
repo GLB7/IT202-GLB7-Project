@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    background-color: #393e46;
+    color: #0092ca;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:#0092ca;
+    background-color:#393e46;
+    margin: 0;
+}
+
+/* Color Palette
+#222831  Dark Blue
+#393e46  Gray
+#0092ca; Light Blue
+#eeeeee; White
+*/

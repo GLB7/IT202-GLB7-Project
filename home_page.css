@@ -1,0 +1,45 @@
+body {
+    background-color: #222831;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+    color: #0092ca;
+    margin: 10px; 
+    text-decoration: underline;
+    margin-left: 50px; 
+}
+
+p {
+    font-weight: 400;
+    color: #eeeeee;
+    margin: 10px;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    font-size: large;
+}
+
+.genres {
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+    color: #eeeeee;
+}
+
+.shipping{
+    text-align: center;
+    font-size: large;
+}
+
+a {
+    color: #0092ca; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #34d8eb; /* Change color on hover */
+}
