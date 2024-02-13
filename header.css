@@ -2,6 +2,7 @@ header {
     display: flex;
     align-items: center; /* Align items vertically in the center */
     background-color: #393e46;
+    font-family: 'Times New Roman', Times, serif;
     color: #0092ca;
 }
 
@@ -15,6 +16,30 @@ h1{
     color:#0092ca;
     background-color:#393e46;
     margin: 0;
+}
+
+.buttons-container {
+    position: absolute;
+    /* This will look weird on smaller windows */
+    top: 15px;
+    right: 0;
+    margin: 20px;
+}
+
+a.header-button {
+    text-decoration:none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #222831;
+    border-radius: 5px;
+    background-color: #222831;
+    transition: background-color 0.3s ease;
+    font-size: x-large;
+    color: #0092ca;
+}
+
+.header-button:hover {
+    background-color: #405a64;
 }
 
 /* Color Palette
