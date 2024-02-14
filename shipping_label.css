@@ -1,0 +1,39 @@
+body {
+    background-color: #222831;
+}
+
+#shipping-label{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+#shipping-info{
+    color: #eeeeee;
+    padding:0 25%;
+    margin: 0px 0px;
+}
+
+#usps-mail{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+#to-address{
+    color: #eeeeee;
+    padding:0 30%;
+    margin: 0px 0px;
+}
+
+#tracking-number{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+}
