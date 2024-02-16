@@ -1,3 +1,10 @@
+<!-- 
+Giovani Bergamasco
+2/16/2024
+IT - 202 002
+Phase 1 Assignment: HTML5 and PHP Form
+glb7@njit.edu  
+-->
 <?php
    if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
     $error_message = '';
@@ -35,6 +42,10 @@
     if ($value > 1000) {
         // Check if the value is less than 1000
         $error_message = "The total declared value of the package must not exceed $1,000.";
+    }
+
+    if (empty($toaddress)) {
+        $error_message = "The address field must not be empty.";
     }
 
     if($error_message != '') {

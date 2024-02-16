@@ -1,6 +1,21 @@
+/* 
+Giovani Bergamasco
+2/16/2024
+IT - 202 002
+Phase 1 Assignment: HTML5 and PHP Form
+glb7@njit.edu 
+*/
 footer {
     background-color: #393e46;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: #eeeeee;
+    font-weight:200px;
+    margin: 50px;
+}
+
+p#footer_text{
+    background-color: #393e46;
+    font-family: 'Times New Roman', Times, serif;
     color: #eeeeee;
     font-weight:200px;
     margin: 50px;

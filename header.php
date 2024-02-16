@@ -1,6 +1,13 @@
+<!-- 
+Giovani Bergamasco
+2/16/2024
+IT - 202 002
+Phase 1 Assignment: HTML5 and PHP Form
+glb7@njit.edu  
+-->
 <body>
     <header>
-        <img src="images/store_logo.png" alt="store_logo" width="100"/>
+        <figure><img src="images/store_logo.png" alt="store_logo" width="100"/></figure>
         <link rel="stylesheet" href="header.css"/>
         <h1>The Bibliophile's Commune</h1>
         <nav>

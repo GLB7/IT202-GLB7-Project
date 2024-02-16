@@ -1,3 +1,10 @@
+<!-- 
+Giovani Bergamasco
+2/16/2024
+IT - 202 002
+Phase 1 Assignment: HTML5 and PHP Form
+glb7@njit.edu 
+ -->
 <html>
     <head>
         <title>The Bibliophile's Commune</title>
@@ -8,7 +15,7 @@
         <?php include ('header.php');?>
         <main>
             <h2>About Us</h2>
-            <p>Established in 2003 by Ned Flanders, The Bibliophile's Commune was born out of Ned's personal quest for books that resonated with his unique tastes. Frustrated by the challenge of finding books he truly enjoyed, Ned envisioned a haven for readers seeking a diverse selection. The store is meticulously curated, encompassing Fiction Novels, Self-Help Books, Cookbooks, Science Fiction series, and Biographies, reflecting Ned's commitment to catering to a broad spectrum of literary preferences. With a passion for fostering a community of avid readers, the Bibliophile's Commune goes beyond being a bookstore; it is a space where individuals can discover, connect, and indulge in the transformative power of literature. Ned's vision extends beyond mere commerce, aiming to create an environment where everyone can find their next favorite read. </p>
+            <p id="about_us_text">Established in 2003 by Ned Flanders, The Bibliophile's Commune was born out of Ned's personal quest for books that resonated with his unique tastes. Frustrated by the challenge of finding books he truly enjoyed, Ned envisioned a haven for readers seeking a diverse selection. The store is meticulously curated, encompassing Fiction Novels, Self-Help Books, Cookbooks, Science Fiction series, and Biographies, reflecting Ned's commitment to catering to a broad spectrum of literary preferences. With a passion for fostering a community of avid readers, the Bibliophile's Commune goes beyond being a bookstore; it is a space where individuals can discover, connect, and indulge in the transformative power of literature. Ned's vision extends beyond mere commerce, aiming to create an environment where everyone can find their next favorite read. </p>
             <h2>Our Selection</h2>
             <nav>
                 <div class="genres">
