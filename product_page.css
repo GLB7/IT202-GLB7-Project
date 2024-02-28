@@ -1,0 +1,73 @@
+/* 
+Giovani Bergamasco
+3/1/2024
+IT - 202 002
+Phase 2 Assignment: Read SQL Data using PHP
+glb7@njit.edu 
+*/
+
+body {
+    background-color: #222831;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#book-list{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0092ca;
+    text-decoration: underline;
+}
+
+#categories{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.categories-text:link, .categories-text:visited {
+    color: #eeeeee;
+}
+
+.categories-text:hover {
+    color: #0092ca;
+}
+
+.categories-list{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#category_name{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+table {
+    width: 99.9%; 
+    border-collapse: collapse;
+    color: #eeeeee;
+}
+
+th, td {
+    border: 1px solid #eeeeee; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #393e46;
+    color: #eeeeee; 
+}
+
+tr:nth-child(even) {
+    background-color: #393e46; /* Add a background color to every other row */
+}
