@@ -69,23 +69,19 @@ $statement3->closeCursor();
             <div id="category_name"><?php echo $category_name; ?></div>
             <table>
                 <tr> <!-- first table row (this is just the header to describe the content) -->
-                    <th>Code</th> <!-- th table header -->
-                    <th>Name</th>
+                    <th>Name</th> <!-- th table header -->
                     <th>Description</th>
                     <th>Pages</th>
                     <th>Price</th>
-                    <th>Date Added</th>
                     <th> </th>
                 </tr>
 
                 <?php foreach ($products as $product) : ?>
                 <tr> <!-- subsequent rows with actual information about database -->
-                    <td><?php echo $product['bookCode']; ?></td> <!-- th table data-->
-                    <td><?php echo $product['bookName']; ?></td>
+                    <td><?php echo $product['bookName']; ?></td> <!-- th table data-->
                     <td><?php echo $product['description']; ?></td>
                     <td><?php echo $product['bookPages']; ?></td>
                     <td><?php echo $product['price']; ?></td>
-                    <td><?php echo $product['dateCreated']; ?></td>
                     <td>
                     <form action="delete_product.php" method="post"> <!-- in phase 2 this still does not work make delete.php later-->
                         <input type="hidden" name="product_id" value="<?php echo $product['bookID'];?>"/>
