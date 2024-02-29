@@ -9,6 +9,8 @@ glb7@njit.edu
 body {
     background-color: #222831;
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    height: 100%;
 }
 
 #book-list{

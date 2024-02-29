@@ -69,6 +69,7 @@ $statement3->closeCursor();
             <div id="category_name"><?php echo $category_name; ?></div>
             <table>
                 <tr> <!-- first table row (this is just the header to describe the content) -->
+                    <th>Code</th>
                     <th>Name</th> <!-- th table header -->
                     <th>Description</th>
                     <th>Pages</th>
@@ -78,6 +79,7 @@ $statement3->closeCursor();
 
                 <?php foreach ($products as $product) : ?>
                 <tr> <!-- subsequent rows with actual information about database -->
+                    <td><?php echo $product['bookCode']; ?></td>
                     <td><?php echo $product['bookName']; ?></td> <!-- th table data-->
                     <td><?php echo $product['description']; ?></td>
                     <td><?php echo $product['bookPages']; ?></td>
