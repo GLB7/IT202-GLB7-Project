@@ -14,6 +14,7 @@ glb7@njit.edu
             <div class="buttons-container">
                 <a href="home_page.php" class="header-button">Home</a>
                 <a href="product_page.php" class="header-button">Products</a>
+                <a href="add_product_form.php" class="header-button">Create</a>
                 <a href="shipping.php" class="header-button">Shipping</a>
             </div>
         </nav>
