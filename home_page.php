@@ -1,11 +1,17 @@
 <!-- 
 Giovani Bergamasco
-2/16/2024
+4/5/2024
 IT - 202 002
-Phase 1 Assignment: HTML5 and PHP Form
-glb7@njit.edu 
- -->
-<html>
+Phase 4 Assignment: PHP Authentication and Delete SQL Data
+glb7@njit.edu  
+-->
+<?php
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
+?>
+
+ <html>
     <head>
         <title>The Bibliophile's Commune</title>
         <link rel="icon" href="images/store_logo.png" type="image/png"/>

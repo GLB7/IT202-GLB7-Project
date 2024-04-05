@@ -1,10 +1,10 @@
 <!-- 
 Giovani Bergamasco
-3/1/2024
+4/5/2024
 IT - 202 002
-Phase 2 Assignment: Read SQL Data using PHP
-glb7@njit.edu 
- -->
+Phase 4 Assignment: PHP Authentication and Delete SQL Data
+glb7@njit.edu  
+-->
 <?php
   // Slide 24 (sort of)
   $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=glb7';
@@ -18,5 +18,10 @@ glb7@njit.edu
     $error_message = $ex->getMessage();
     include('database_error.php');
     exit();
+  }
+
+  function getDB() {
+    global $db;
+    return $db;
   }
 ?>

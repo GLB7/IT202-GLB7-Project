@@ -1,10 +1,14 @@
 <!-- 
 Giovani Bergamasco
-3/1/2024
+4/5/2024
 IT - 202 002
-Phase 2 Assignment: Read SQL Data using PHP
-glb7@njit.edu 
- -->
+Phase 4 Assignment: PHP Authentication and Delete SQL Data
+glb7@njit.edu  
+-->
+<?php
+session_start();
+?>
+
  <?php require_once('database_njit.php');   // Using NJIT Database
  // Get category ID
  $category_id = filter_input(INPUT_GET, 'category_id', FILTER_VALIDATE_INT);
@@ -74,7 +78,7 @@ $statement3->closeCursor();
                     <th>Description</th>
                     <th>Pages</th>
                     <th>Price</th>
-                    <th> </th>
+                    <?php if (isset($_SESSION['is_valid_admin'])) {echo '<th></th>';}?>
                 </tr>
 
                 <?php foreach ($products as $product) : ?>
@@ -84,13 +88,17 @@ $statement3->closeCursor();
                     <td><?php echo $product['description']; ?></td>
                     <td><?php echo $product['bookPages']; ?></td>
                     <td><?php echo $product['price']; ?></td>
-                    <td>
-                    <form action="delete_product.php" method="post"> <!-- in phase 2 this still does not work make delete.php later-->
-                        <input type="hidden" name="product_id" value="<?php echo $product['bookID'];?>"/>
-                        <input type="hidden" name="category_id" value="<?php echo $product['bookCategoryID'];?>"/>
-                        <input type="submit" value="Delete"/>
-                    </form>
-                    </td>
+                    <?php
+                    if (isset($_SESSION['is_valid_admin'])) {
+                        echo '<td>';
+                        echo '<form action="delete_product.php" method="post">';
+                        echo '<input type="hidden" name="book_id" value="'.$product['bookID'].'"/>';
+                        echo '<input type="hidden" name="bookCategory_id" value="'.$product['bookCategoryID'].'"/>';
+                        echo '<input type="submit" value="Delete"/>';
+                        echo '</form>';
+                        echo '</td>';
+                    }
+                    ?>
                 </tr>
                 <?php endforeach; ?>      
             </table>

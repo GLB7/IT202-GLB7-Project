@@ -6,6 +6,15 @@ Phase 3 Assignment: Create SQL Data using PHP
 glb7@njit.edu  
 -->
 <?php
+session_start();
+if (!isset($_SESSION['is_valid_admin'])) {
+    $login_message = "You must log in to access that page.";
+    header("Location: login_page.php?login_message=".urlencode($login_message));
+    exit();
+}
+?>
+
+<?php
 require_once('database_njit.php'); 
 $query = 'SELECT *
           FROM bookCategories
