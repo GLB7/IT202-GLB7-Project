@@ -1,8 +1,8 @@
 <!-- 
 Giovani Bergamasco
-4/5/2024
+4/18/2024
 IT - 202 002
-Phase 4 Assignment: PHP Authentication and Delete SQL Data
+Phase 5 Assignment: Read SQL Data with PHP and JavaScript
 glb7@njit.edu  
 -->
 <?php
@@ -83,18 +83,29 @@ $statement3->closeCursor();
 
                 <?php foreach ($products as $product) : ?>
                 <tr> <!-- subsequent rows with actual information about database -->
-                    <td><?php echo $product['bookCode']; ?></td>
+                    <td><a id="code" href="product_details.php?book_id=<?php echo $product['bookID']; ?>">
+                        <?php echo $product['bookCode']; ?></a></td>
                     <td><?php echo $product['bookName']; ?></td> <!-- th table data-->
                     <td><?php echo $product['description']; ?></td>
                     <td><?php echo $product['bookPages']; ?></td>
                     <td><?php echo $product['price']; ?></td>
+                    <script>
+                    function confirmDelete() {
+                        const confirmDelete = confirm("Are you sure you want to delete this book?");
+                        if(confirmDelete) {
+                            console.log(confirmDelete);
+                            return true;
+                        }
+                        return false;
+                     }
+                    </script>
                     <?php
                     if (isset($_SESSION['is_valid_admin'])) {
                         echo '<td>';
                         echo '<form action="delete_product.php" method="post">';
                         echo '<input type="hidden" name="book_id" value="'.$product['bookID'].'"/>';
                         echo '<input type="hidden" name="bookCategory_id" value="'.$product['bookCategoryID'].'"/>';
-                        echo '<input type="submit" value="Delete"/>';
+                        echo '<input type="submit" value="Delete" onclick="return confirmDelete();"/>';
                         echo '</form>';
                         echo '</td>';
                     }

@@ -1,9 +1,9 @@
 /*
 Giovani Bergamasco
-3/13/2024
+4/18/2024
 IT - 202 002
-Phase 3 Assignment: Create SQL Data using PHP
-glb7@njit.edu
+Phase 5 Assignment: Read SQL Data with PHP and JavaScript
+glb7@njit.edu 
 */
 
 body {
@@ -49,7 +49,22 @@ input[type="submit"] {
     transition: 0.3s; 
 }
 
+input[type="button"] {
+    background-color: #393e46;
+    color: red;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: large;
+    transition: 0.3s; 
+}
+
 input[type="submit"]:hover {
+    background-color: #434952;
+}
+
+input[type="button"]:hover {
     background-color: #434952;
 }
 
@@ -65,4 +80,8 @@ input[type="submit"]:hover {
     margin:0 25%;
     margin-bottom: 5px;
     color: #2bff00;
+}
+
+span {
+    color: #FF0000;
 }

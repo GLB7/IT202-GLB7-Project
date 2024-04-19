@@ -6,7 +6,9 @@ Phase 4 Assignment: PHP Authentication and Delete SQL Data
 glb7@njit.edu  
 -->
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 if (!isset($_SESSION['is_valid_admin'])) {
     $login_message = "You must log in to access that page.";
     header("Location: login_page.php?login_message=".urlencode($login_message));

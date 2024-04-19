@@ -1,8 +1,8 @@
 <!-- 
 Giovani Bergamasco
-3/13/2024
+4/18/2024
 IT - 202 002
-Phase 3 Assignment: Create SQL Data using PHP
+Phase 5 Assignment: Read SQL Data with PHP and JavaScript
 glb7@njit.edu  
 -->
 <?php
@@ -58,18 +58,27 @@ $success = filter_input(INPUT_GET, 'success')
                 </option>
             <?php endforeach; ?>
             </select><br>
-        <label>Code:</label>
-            <input type="text" name="code" placeholder="e.g., F_TGG"><br>
-        <label>Name:</label>
-            <input type="text" name="name" placeholder="e.g., The Great Gatsby"><br>
-        <label>Description:</label>
-            <input type="text" name="description" placeholder="e.g., A novel written by American author F. Scott Fitzgerald"><br>
+        <label>Code: <span id = code_span></span></label>
+            <input type="text" name="code" id = "code" placeholder="e.g., F_TGG"><br>
+        <label>Name: <span id = name_span></span></label>
+            <input type="text" name="name" id = "name" placeholder="e.g., The Great Gatsby"><br>
+        <label>Description: <span id = description_span></span></label>
+            <input type="text" name="description" id = "description" placeholder="e.g., A novel written by American author F. Scott Fitzgerald"><br>
         <label>Pages:</label>
             <input type="text" name="pages" placeholder="e.g., 208"><br>
-        <label>Price:</label>
-            <input type="text" name="price" placeholder="e.g., 13.99"><br>
+        <label>Price: <span id = price_span></span></label>
+            <input type="text" name="price" id = "price" placeholder="e.g., 13.99"><br>
         <input type="submit" value="Add Book"><br>
+        <input type="button" value="Reset" id="reset_form_button"><br>
         </form>
+        <script>
+        document.getElementById('reset_form_button').addEventListener('click', function() {
+            document.getElementById('add_product_form').reset();
+            document.querySelector('#add_product_form input').focus(); // Check
+        });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="add_product.js"></script>
         </main>
         <?php include ('footer.php');?>
 </html>
