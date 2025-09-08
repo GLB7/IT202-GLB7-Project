@@ -1,0 +1,1 @@
+This a semester long website project that uses PHP, CSS, SQL and Javascript. The website features login functionality and serves as a mock store page for managers of a store where full crud operations can be done on items. 
